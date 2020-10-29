@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SG Covid-19 Cases</title>
+		
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "serial",
+					"categoryField": "Date",
+					"dataDateFormat": "YYYY-MM-DD",
+					"categoryAxis": {
+						"parseDates": true
+					},
+					"chartCursor": {
+						"enabled": true,
+						"categoryBalloonDateFormat": "DD MMM YYYY",
+						"leaveCursor": true,
+						"tabIndex": 4
+					},
+					"chartScrollbar": {
+						"enabled": true
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"balloonText": "[[title]] [[value]]",
+							"id": "AmGraph-3",
+							"title": "Community",
+							"valueAxis": "ValueAxis-1",
+							"valueField": "Community"
+						},
+						{
+							"balloonText": "[[title]] [[value]]",
+							"id": "AmGraph-4",
+							"title": "Dorm",
+							"valueAxis": "ValueAxis-1",
+							"valueField": "Dorm"
+						},
+						{
+							"balloonText": "[[title]] [[value]]",
+							"id": "AmGraph-5",
+							"title": "Imported",
+							"valueAxis": "ValueAxis-1",
+							"valueField": "Imported"
+						},
+						{
+							"balloonText": "[[title]] [[value]]",
+							"id": "AmGraph-6",
+							"lineColor": "#7D642E",
+							"title": "Daily Cases",
+							"valueAxis": "ValueAxis-1",
+							"valueField": "Daily Cases"
+						},
+						{
+							"balloonText": "[[title]] [[value]]",
+							"fixedColumnWidth": -2,
+							"id": "AmGraph-7",
+							"lineColor": "#008000",
+							"lineThickness": 2,
+							"title": "Total Dorm",
+							"valueAxis": "ValueAxis-2",
+							"valueField": "Total Dorm"
+						},
+						{
+							"balloonText": "[[title]] [[value]]",
+							"dashLength": 1,
+							"fixedColumnWidth": -4,
+							"id": "AmGraph-8",
+							"lineColor": "#0000FF",
+							"lineThickness": 2,
+							"title": "Total Cases",
+							"valueAxis": "ValueAxis-2",
+							"valueField": "Total Cases"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"title": "Daily Community/Dorm/Imported/Cases",
+							"titleFontSize": 9
+						},
+						{
+							"id": "ValueAxis-2",
+							"position": "right",
+							"title": "Total Dorm/Cases",
+							"titleFontSize": 9
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"markerBorderThickness": 0,
+						"useGraphSettings": true
+					},
+					"titles": [
+						{
+							"id": "Title-1",
+							"size": 15,
+							"text": "COVID-19 CASES SINCE CIRCUIT BREAKER 7 APR 2020"
+						}
+					],
+					"dataProvider": [
+						{
+							"Date": "2020-04-07",
+							"Community": "46",
+							"Dorm": "57",
+							"Imported": "0",
+							"Daily Cases": "103",
+							"Total Dorm": "461",
+							"Total Cases": "1448"
+						},
+						{
+							"Date": "2020-04-08",
+							"Community": "66",
+							"Dorm": "74",
+							"Imported": "0",
+							"Daily Cases": "140",
+							"Total Dorm": "535",
+							"Total Cases": "1588"
+						},
+						{
+							"Date": "2020-04-09",
+							"Community": "56",
+							"Dorm": "228",
+							"Imported": "0",
+							"Daily Cases": "284",
+							"Total Dorm": "763",
+							"Total Cases": "1872"
+						},
+						{
+							"Date": "2020-04-10",
+							"Community": "57",
+							"Dorm": "141",
+							"Imported": "0",
+							"Daily Cases": "198",
+							"Total Dorm": "904",
+							"Total Cases": "2070"
+						},
+						{
+							"Date": "2020-04-11",
+							"Community": "39",
+							"Dorm": "152",
+							"Imported": "0",
+							"Daily Cases": "191",
+							"Total Dorm": "1056",
+							"Total Cases": "2261"
+						},
+						{
+							"Date": "2020-04-12",
+							"Community": "45",
+							"Dorm": "188",
+							"Imported": "0",
+							"Daily Cases": "233",
+							"Total Dorm": "1244",
+							"Total Cases": "2494"
+						},
+						{
+							"Date": "2020-04-13",
+							"Community": "52",
+							"Dorm": "334",
+							"Imported": "0",
+							"Daily Cases": "386",
+							"Total Dorm": "1578",
+							"Total Cases": "2880"
+						},
+						{
+							"Date": "2020-04-14",
+							"Community": "59",
+							"Dorm": "275",
+							"Imported": "0",
+							"Daily Cases": "334",
+							"Total Dorm": "1853",
+							"Total Cases": "3214"
+						},
+						{
+							"Date": "2020-04-15",
+							"Community": "41",
+							"Dorm": "406",
+							"Imported": "0",
+							"Daily Cases": "447",
+							"Total Dorm": "2259",
+							"Total Cases": "3661"
+						},
+						{
+							"Date": "2020-04-16",
+							"Community": "52",
+							"Dorm": "676",
+							"Imported": "0",
+							"Daily Cases": "728",
+							"Total Dorm": "2935",
+							"Total Cases": "4389"
+						},
+						{
+							"Date": "2020-04-17",
+							"Community": "60",
+							"Dorm": "562",
+							"Imported": "0",
+							"Daily Cases": "622",
+							"Total Dorm": "3497",
+							"Total Cases": "5011"
+						},
+						{
+							"Date": "2020-04-18",
+							"Community": "49",
+							"Dorm": "893",
+							"Imported": "0",
+							"Daily Cases": "942",
+							"Total Dorm": "4390",
+							"Total Cases": "5953"
+						},
+						{
+							"Date": "2020-04-19",
+							"Community": "48",
+							"Dorm": "548",
+							"Imported": "0",
+							"Daily Cases": "596",
+							"Total Dorm": "4938",
+							"Total Cases": "6549"
+						},
+						{
+							"Date": "2020-04-20",
+							"Community": "55",
+							"Dorm": "1371",
+							"Imported": "0",
+							"Daily Cases": "1426",
+							"Total Dorm": "6309",
+							"Total Cases": "7975"
+						},
+						{
+							"Date": "2020-04-21",
+							"Community": "61",
+							"Dorm": "1050",
+							"Imported": "0",
+							"Daily Cases": "1111",
+							"Total Dorm": "7359",
+							"Total Cases": "9086"
+						},
+						{
+							"Date": "2020-04-22",
+							"Community": "49",
+							"Dorm": "967",
+							"Imported": "0",
+							"Daily Cases": "1016",
+							"Total Dorm": "8326",
+							"Total Cases": "10102"
+						},
+						{
+							"Date": "2020-04-23",
+							"Community": "55",
+							"Dorm": "982",
+							"Imported": "0",
+							"Daily Cases": "1037",
+							"Total Dorm": "9308",
+							"Total Cases": "11139"
+						},
+						{
+							"Date": "2020-04-24",
+							"Community": "44",
+							"Dorm": "853",
+							"Imported": "0",
+							"Daily Cases": "897",
+							"Total Dorm": "10161",
+							"Total Cases": "12036"
+						},
+						{
+							"Date": "2020-04-25",
+							"Community": "21",
+							"Dorm": "597",
+							"Imported": "0",
+							"Daily Cases": "618",
+							"Total Dorm": "10758",
+							"Total Cases": "12654"
+						},
+						{
+							"Date": "2020-04-26",
+							"Community": "38",
+							"Dorm": "891",
+							"Imported": "2",
+							"Daily Cases": "931",
+							"Total Dorm": "11649",
+							"Total Cases": "13585"
+						},
+						{
+							"Date": "2020-04-27",
+							"Community": "26",
+							"Dorm": "773",
+							"Imported": "0",
+							"Daily Cases": "799",
+							"Total Dorm": "12422",
+							"Total Cases": "14384"
+						},
+						{
+							"Date": "2020-04-28",
+							"Community": "14",
+							"Dorm": "514",
+							"Imported": "0",
+							"Daily Cases": "528",
+							"Total Dorm": "12936",
+							"Total Cases": "14912"
+						},
+						{
+							"Date": "2020-04-29",
+							"Community": "19",
+							"Dorm": "671",
+							"Imported": "0",
+							"Daily Cases": "690",
+							"Total Dorm": "13607",
+							"Total Cases": "15602"
+						},
+						{
+							"Date": "2020-04-30",
+							"Community": "19",
+							"Dorm": "509",
+							"Imported": "0",
+							"Daily Cases": "528",
+							"Total Dorm": "14116",
+							"Total Cases": "16130"
+						},
+						{
+							"Date": "2020-05-01",
+							"Community": "12",
+							"Dorm": "920",
+							"Imported": "0",
+							"Daily Cases": "932",
+							"Total Dorm": "15036",
+							"Total Cases": "17062"
+						},
+						{
+							"Date": "2020-05-02",
+							"Community": "9",
+							"Dorm": "438",
+							"Imported": "0",
+							"Daily Cases": "447",
+							"Total Dorm": "15474",
+							"Total Cases": "17509"
+						},
+						{
+							"Date": "2020-05-03",
+							"Community": "17",
+							"Dorm": "640",
+							"Imported": "0",
+							"Daily Cases": "657",
+							"Total Dorm": "16114",
+							"Total Cases": "18166"
+						},
+						{
+							"Date": "2020-05-04",
+							"Community": "7",
+							"Dorm": "565",
+							"Imported": "0",
+							"Daily Cases": "572",
+							"Total Dorm": "16679",
+							"Total Cases": "18738"
+						},
+						{
+							"Date": "2020-05-05",
+							"Community": "12",
+							"Dorm": "619",
+							"Imported": "0",
+							"Daily Cases": "631",
+							"Total Dorm": "17298",
+							"Total Cases": "19369"
+						},
+						{
+							"Date": "2020-05-06",
+							"Community": "19",
+							"Dorm": "769",
+							"Imported": "0",
+							"Daily Cases": "788",
+							"Total Dorm": "18067",
+							"Total Cases": "20157"
+						},
+						{
+							"Date": "2020-05-07",
+							"Community": "11",
+							"Dorm": "723",
+							"Imported": "0",
+							"Daily Cases": "734",
+							"Total Dorm": "18790",
+							"Total Cases": "20891"
+						},
+						{
+							"Date": "2020-05-08",
+							"Community": "13",
+							"Dorm": "729",
+							"Imported": "0",
+							"Daily Cases": "742",
+							"Total Dorm": "19519",
+							"Total Cases": "21633"
+						},
+						{
+							"Date": "2020-05-09",
+							"Community": "10",
+							"Dorm": "743",
+							"Imported": "0",
+							"Daily Cases": "753",
+							"Total Dorm": "20262",
+							"Total Cases": "22386"
+						},
+						{
+							"Date": "2020-05-10",
+							"Community": "11",
+							"Dorm": "864",
+							"Imported": "1",
+							"Daily Cases": "876",
+							"Total Dorm": "21126",
+							"Total Cases": "23262"
+						},
+						{
+							"Date": "2020-05-11",
+							"Community": "3",
+							"Dorm": "483",
+							"Imported": "0",
+							"Daily Cases": "486",
+							"Total Dorm": "21609",
+							"Total Cases": "23748"
+						},
+						{
+							"Date": "2020-05-12",
+							"Community": "4",
+							"Dorm": "880",
+							"Imported": "0",
+							"Daily Cases": "884",
+							"Total Dorm": "22489",
+							"Total Cases": "24632"
+						},
+						{
+							"Date": "2020-05-13",
+							"Community": "4",
+							"Dorm": "671",
+							"Imported": "0",
+							"Daily Cases": "675",
+							"Total Dorm": "23160",
+							"Total Cases": "25307"
+						},
+						{
+							"Date": "2020-05-14",
+							"Community": "2",
+							"Dorm": "750",
+							"Imported": "0",
+							"Daily Cases": "752",
+							"Total Dorm": "23910",
+							"Total Cases": "26059"
+						},
+						{
+							"Date": "2020-05-15",
+							"Community": "2",
+							"Dorm": "791",
+							"Imported": "0",
+							"Daily Cases": "793",
+							"Total Dorm": "24701",
+							"Total Cases": "26852"
+						},
+						{
+							"Date": "2020-05-16",
+							"Community": "8",
+							"Dorm": "457",
+							"Imported": "0",
+							"Daily Cases": "465",
+							"Total Dorm": "25158",
+							"Total Cases": "27317"
+						},
+						{
+							"Date": "2020-05-17",
+							"Community": "9",
+							"Dorm": "673",
+							"Imported": "0",
+							"Daily Cases": "682",
+							"Total Dorm": "25831",
+							"Total Cases": "27999"
+						},
+						{
+							"Date": "2020-05-18",
+							"Community": "2",
+							"Dorm": "303",
+							"Imported": "0",
+							"Daily Cases": "305",
+							"Total Dorm": "26134",
+							"Total Cases": "28304"
+						},
+						{
+							"Date": "2020-05-19",
+							"Community": "1",
+							"Dorm": "450",
+							"Imported": "0",
+							"Daily Cases": "451",
+							"Total Dorm": "26584",
+							"Total Cases": "28755"
+						},
+						{
+							"Date": "2020-05-20",
+							"Community": "8",
+							"Dorm": "562",
+							"Imported": "0",
+							"Daily Cases": "570",
+							"Total Dorm": "27146",
+							"Total Cases": "29325"
+						},
+						{
+							"Date": "2020-05-21",
+							"Community": "13",
+							"Dorm": "435",
+							"Imported": "0",
+							"Daily Cases": "448",
+							"Total Dorm": "27581",
+							"Total Cases": "29773"
+						},
+						{
+							"Date": "2020-05-22",
+							"Community": "4",
+							"Dorm": "610",
+							"Imported": "0",
+							"Daily Cases": "614",
+							"Total Dorm": "28191",
+							"Total Cases": "30387"
+						},
+						{
+							"Date": "2020-05-23",
+							"Community": "11",
+							"Dorm": "631",
+							"Imported": "0",
+							"Daily Cases": "642",
+							"Total Dorm": "28822",
+							"Total Cases": "31029"
+						},
+						{
+							"Date": "2020-05-24",
+							"Community": "4",
+							"Dorm": "544",
+							"Imported": "0",
+							"Daily Cases": "548",
+							"Total Dorm": "29366",
+							"Total Cases": "31577"
+						},
+						{
+							"Date": "2020-05-25",
+							"Community": "6",
+							"Dorm": "338",
+							"Imported": "0",
+							"Daily Cases": "344",
+							"Total Dorm": "29704",
+							"Total Cases": "31921"
+						},
+						{
+							"Date": "2020-05-26",
+							"Community": "2",
+							"Dorm": "381",
+							"Imported": "0",
+							"Daily Cases": "383",
+							"Total Dorm": "30085",
+							"Total Cases": "32304"
+						},
+						{
+							"Date": "2020-05-27",
+							"Community": "4",
+							"Dorm": "529",
+							"Imported": "0",
+							"Daily Cases": "533",
+							"Total Dorm": "30614",
+							"Total Cases": "32837"
+						},
+						{
+							"Date": "2020-05-28",
+							"Community": "2",
+							"Dorm": "371",
+							"Imported": "0",
+							"Daily Cases": "373",
+							"Total Dorm": "30985",
+							"Total Cases": "33210"
+						},
+						{
+							"Date": "2020-05-29",
+							"Community": "9",
+							"Dorm": "602",
+							"Imported": "0",
+							"Daily Cases": "611",
+							"Total Dorm": "31587",
+							"Total Cases": "33821"
+						},
+						{
+							"Date": "2020-05-30",
+							"Community": "5",
+							"Dorm": "501",
+							"Imported": "0",
+							"Daily Cases": "506",
+							"Total Dorm": "32088",
+							"Total Cases": "34327"
+						},
+						{
+							"Date": "2020-05-31",
+							"Community": "2",
+							"Dorm": "516",
+							"Imported": "0",
+							"Daily Cases": "518",
+							"Total Dorm": "32604",
+							"Total Cases": "34845"
+						},
+						{
+							"Date": "2020-06-01",
+							"Community": "0",
+							"Dorm": "408",
+							"Imported": "0",
+							"Daily Cases": "408",
+							"Total Dorm": "33012",
+							"Total Cases": "35253"
+						},
+						{
+							"Date": "2020-06-02",
+							"Community": "4",
+							"Dorm": "540",
+							"Imported": "0",
+							"Daily Cases": "544",
+							"Total Dorm": "33552",
+							"Total Cases": "35797"
+						},
+						{
+							"Date": "2020-06-03",
+							"Community": "7",
+							"Dorm": "562",
+							"Imported": "0",
+							"Daily Cases": "569",
+							"Total Dorm": "34114",
+							"Total Cases": "36366"
+						},
+						{
+							"Date": "2020-06-04",
+							"Community": "15",
+							"Dorm": "502",
+							"Imported": "0",
+							"Daily Cases": "517",
+							"Total Dorm": "34616",
+							"Total Cases": "36883"
+						},
+						{
+							"Date": "2020-06-05",
+							"Community": "11",
+							"Dorm": "250",
+							"Imported": "0",
+							"Daily Cases": "261",
+							"Total Dorm": "34866",
+							"Total Cases": "37144"
+						},
+						{
+							"Date": "2020-06-06",
+							"Community": "7",
+							"Dorm": "337",
+							"Imported": "0",
+							"Daily Cases": "344",
+							"Total Dorm": "35203",
+							"Total Cases": "37488"
+						},
+						{
+							"Date": "2020-06-07",
+							"Community": "14",
+							"Dorm": "369",
+							"Imported": "0",
+							"Daily Cases": "383",
+							"Total Dorm": "35572",
+							"Total Cases": "37871"
+						},
+						{
+							"Date": "2020-06-08",
+							"Community": "2",
+							"Dorm": "384",
+							"Imported": "0",
+							"Daily Cases": "386",
+							"Total Dorm": "35956",
+							"Total Cases": "38257"
+						},
+						{
+							"Date": "2020-06-09",
+							"Community": "6",
+							"Dorm": "212",
+							"Imported": "0",
+							"Daily Cases": "218",
+							"Total Dorm": "36168",
+							"Total Cases": "38475"
+						},
+						{
+							"Date": "2020-06-10",
+							"Community": "7",
+							"Dorm": "444",
+							"Imported": "0",
+							"Daily Cases": "451",
+							"Total Dorm": "36612",
+							"Total Cases": "38926"
+						},
+						{
+							"Date": "2020-06-11",
+							"Community": "6",
+							"Dorm": "416",
+							"Imported": "0",
+							"Daily Cases": "422",
+							"Total Dorm": "37028",
+							"Total Cases": "39348"
+						},
+						{
+							"Date": "2020-06-12",
+							"Community": "18",
+							"Dorm": "445",
+							"Imported": "0",
+							"Daily Cases": "463",
+							"Total Dorm": "37473",
+							"Total Cases": "39811"
+						},
+						{
+							"Date": "2020-06-13",
+							"Community": "5",
+							"Dorm": "342",
+							"Imported": "0",
+							"Daily Cases": "347",
+							"Total Dorm": "37815",
+							"Total Cases": "40158"
+						},
+						{
+							"Date": "2020-06-14",
+							"Community": "9",
+							"Dorm": "397",
+							"Imported": "1",
+							"Daily Cases": "407",
+							"Total Dorm": "38212",
+							"Total Cases": "40565"
+						},
+						{
+							"Date": "2020-06-15",
+							"Community": "3",
+							"Dorm": "211",
+							"Imported": "0",
+							"Daily Cases": "214",
+							"Total Dorm": "38423",
+							"Total Cases": "40779"
+						},
+						{
+							"Date": "2020-06-16",
+							"Community": "2",
+							"Dorm": "149",
+							"Imported": "0",
+							"Daily Cases": "151",
+							"Total Dorm": "38572",
+							"Total Cases": "40930"
+						},
+						{
+							"Date": "2020-06-17",
+							"Community": "5",
+							"Dorm": "242",
+							"Imported": "0",
+							"Daily Cases": "247",
+							"Total Dorm": "38814",
+							"Total Cases": "41177"
+						},
+						{
+							"Date": "2020-06-18",
+							"Community": "4",
+							"Dorm": "253",
+							"Imported": "0",
+							"Daily Cases": "257",
+							"Total Dorm": "39067",
+							"Total Cases": "41434"
+						},
+						{
+							"Date": "2020-06-19",
+							"Community": "1",
+							"Dorm": "141",
+							"Imported": "0",
+							"Daily Cases": "142",
+							"Total Dorm": "39208",
+							"Total Cases": "41576"
+						},
+						{
+							"Date": "2020-06-20",
+							"Community": "2",
+							"Dorm": "216",
+							"Imported": "0",
+							"Daily Cases": "218",
+							"Total Dorm": "39424",
+							"Total Cases": "41794"
+						},
+						{
+							"Date": "2020-06-21",
+							"Community": "10",
+							"Dorm": "252",
+							"Imported": "0",
+							"Daily Cases": "262",
+							"Total Dorm": "39676",
+							"Total Cases": "42056"
+						},
+						{
+							"Date": "2020-06-22",
+							"Community": "1",
+							"Dorm": "217",
+							"Imported": "0",
+							"Daily Cases": "218",
+							"Total Dorm": "39893",
+							"Total Cases": "42274"
+						},
+						{
+							"Date": "2020-06-23",
+							"Community": "4",
+							"Dorm": "115",
+							"Imported": "0",
+							"Daily Cases": "119",
+							"Total Dorm": "40008",
+							"Total Cases": "42393"
+						},
+						{
+							"Date": "2020-06-24",
+							"Community": "7",
+							"Dorm": "184",
+							"Imported": "0",
+							"Daily Cases": "191",
+							"Total Dorm": "40192",
+							"Total Cases": "42584"
+						},
+						{
+							"Date": "2020-06-25",
+							"Community": "5",
+							"Dorm": "108",
+							"Imported": "0",
+							"Daily Cases": "113",
+							"Total Dorm": "40300",
+							"Total Cases": "42697"
+						},
+						{
+							"Date": "2020-06-26",
+							"Community": "6",
+							"Dorm": "213",
+							"Imported": "0",
+							"Daily Cases": "219",
+							"Total Dorm": "40513",
+							"Total Cases": "42916"
+						},
+						{
+							"Date": "2020-06-27",
+							"Community": "11",
+							"Dorm": "280",
+							"Imported": "0",
+							"Daily Cases": "291",
+							"Total Dorm": "40793",
+							"Total Cases": "43207"
+						},
+						{
+							"Date": "2020-06-28",
+							"Community": "12",
+							"Dorm": "201",
+							"Imported": "0",
+							"Daily Cases": "213",
+							"Total Dorm": "40994",
+							"Total Cases": "43420"
+						},
+						{
+							"Date": "2020-06-29",
+							"Community": "7",
+							"Dorm": "195",
+							"Imported": "0",
+							"Daily Cases": "202",
+							"Total Dorm": "41189",
+							"Total Cases": "43622"
+						},
+						{
+							"Date": "2020-06-30",
+							"Community": "5",
+							"Dorm": "240",
+							"Imported": "1",
+							"Daily Cases": "246",
+							"Total Dorm": "41429",
+							"Total Cases": "43868"
+						},
+						{
+							"Date": "2020-07-01",
+							"Community": "10",
+							"Dorm": "201",
+							"Imported": "4",
+							"Daily Cases": "215",
+							"Total Dorm": "41630",
+							"Total Cases": "44083"
+						},
+						{
+							"Date": "2020-07-02",
+							"Community": "10",
+							"Dorm": "177",
+							"Imported": "1",
+							"Daily Cases": "188",
+							"Total Dorm": "41807",
+							"Total Cases": "44271"
+						},
+						{
+							"Date": "2020-07-03",
+							"Community": "11",
+							"Dorm": "155",
+							"Imported": "3",
+							"Daily Cases": "169",
+							"Total Dorm": "41962",
+							"Total Cases": "44440"
+						},
+						{
+							"Date": "2020-07-04",
+							"Community": "9",
+							"Dorm": "175",
+							"Imported": "1",
+							"Daily Cases": "185",
+							"Total Dorm": "42137",
+							"Total Cases": "44625"
+						},
+						{
+							"Date": "2020-07-05",
+							"Community": "18",
+							"Dorm": "111",
+							"Imported": "7",
+							"Daily Cases": "136",
+							"Total Dorm": "42248",
+							"Total Cases": "44761"
+						},
+						{
+							"Date": "2020-07-06",
+							"Community": "23",
+							"Dorm": "157",
+							"Imported": "3",
+							"Daily Cases": "183",
+							"Total Dorm": "42405",
+							"Total Cases": "44944"
+						},
+						{
+							"Date": "2020-07-07",
+							"Community": "19",
+							"Dorm": "134",
+							"Imported": "3",
+							"Daily Cases": "156",
+							"Total Dorm": "42539",
+							"Total Cases": "45100"
+						},
+						{
+							"Date": "2020-07-08",
+							"Community": "9",
+							"Dorm": "146",
+							"Imported": "3",
+							"Daily Cases": "158",
+							"Total Dorm": "42685",
+							"Total Cases": "45258"
+						},
+						{
+							"Date": "2020-07-09",
+							"Community": "21",
+							"Dorm": "103",
+							"Imported": "1",
+							"Daily Cases": "125",
+							"Total Dorm": "42788",
+							"Total Cases": "45383"
+						},
+						{
+							"Date": "2020-07-10",
+							"Community": "15",
+							"Dorm": "174",
+							"Imported": "1",
+							"Daily Cases": "190",
+							"Total Dorm": "42962",
+							"Total Cases": "45573"
+						},
+						{
+							"Date": "2020-07-11",
+							"Community": "24",
+							"Dorm": "145",
+							"Imported": "1",
+							"Daily Cases": "170",
+							"Total Dorm": "43107",
+							"Total Cases": "45743"
+						},
+						{
+							"Date": "2020-07-12",
+							"Community": "1",
+							"Dorm": "176",
+							"Imported": "1",
+							"Daily Cases": "178",
+							"Total Dorm": "43283",
+							"Total Cases": "45921"
+						},
+						{
+							"Date": "2020-07-13",
+							"Community": "11",
+							"Dorm": "306",
+							"Imported": "5",
+							"Daily Cases": "322",
+							"Total Dorm": "43589",
+							"Total Cases": "46243"
+						},
+						{
+							"Date": "2020-07-14",
+							"Community": "7",
+							"Dorm": "338",
+							"Imported": "2",
+							"Daily Cases": "347",
+							"Total Dorm": "43927",
+							"Total Cases": "46590"
+						},
+						{
+							"Date": "2020-07-15",
+							"Community": "15",
+							"Dorm": "229",
+							"Imported": "5",
+							"Daily Cases": "249",
+							"Total Dorm": "44156",
+							"Total Cases": "46839"
+						},
+						{
+							"Date": "2020-07-16",
+							"Community": "11",
+							"Dorm": "233",
+							"Imported": "4",
+							"Daily Cases": "248",
+							"Total Dorm": "44389",
+							"Total Cases": "47087"
+						},
+						{
+							"Date": "2020-07-17",
+							"Community": "9",
+							"Dorm": "315",
+							"Imported": "3",
+							"Daily Cases": "327",
+							"Total Dorm": "44704",
+							"Total Cases": "47414"
+						},
+						{
+							"Date": "2020-07-18",
+							"Community": "7",
+							"Dorm": "187",
+							"Imported": "8",
+							"Daily Cases": "202",
+							"Total Dorm": "44891",
+							"Total Cases": "47616"
+						},
+						{
+							"Date": "2020-07-19",
+							"Community": "8",
+							"Dorm": "244",
+							"Imported": "5",
+							"Daily Cases": "257",
+							"Total Dorm": "45135",
+							"Total Cases": "47873"
+						},
+						{
+							"Date": "2020-07-20",
+							"Community": "11",
+							"Dorm": "110",
+							"Imported": "2",
+							"Daily Cases": "123",
+							"Total Dorm": "45245",
+							"Total Cases": "47996"
+						},
+						{
+							"Date": "2020-07-21",
+							"Community": "9",
+							"Dorm": "387",
+							"Imported": "3",
+							"Daily Cases": "399",
+							"Total Dorm": "45632",
+							"Total Cases": "48395"
+						},
+						{
+							"Date": "2020-07-22",
+							"Community": "8",
+							"Dorm": "296",
+							"Imported": "6",
+							"Daily Cases": "310",
+							"Total Dorm": "45928",
+							"Total Cases": "48705"
+						},
+						{
+							"Date": "2020-07-23",
+							"Community": "8",
+							"Dorm": "341",
+							"Imported": "5",
+							"Daily Cases": "354",
+							"Total Dorm": "46269",
+							"Total Cases": "49059"
+						},
+						{
+							"Date": "2020-07-24",
+							"Community": "3",
+							"Dorm": "272",
+							"Imported": "2",
+							"Daily Cases": "277",
+							"Total Dorm": "46541",
+							"Total Cases": "49336"
+						},
+						{
+							"Date": "2020-07-25",
+							"Community": "2",
+							"Dorm": "505",
+							"Imported": "6",
+							"Daily Cases": "513",
+							"Total Dorm": "47046",
+							"Total Cases": "49849"
+						},
+						{
+							"Date": "2020-07-26",
+							"Community": "5",
+							"Dorm": "472",
+							"Imported": "4",
+							"Daily Cases": "481",
+							"Total Dorm": "47518",
+							"Total Cases": "50330"
+						},
+						{
+							"Date": "2020-07-27",
+							"Community": "2",
+							"Dorm": "452",
+							"Imported": "15",
+							"Daily Cases": "469",
+							"Total Dorm": "47970",
+							"Total Cases": "50799"
+						},
+						{
+							"Date": "2020-07-28",
+							"Community": "2",
+							"Dorm": "355",
+							"Imported": "2",
+							"Daily Cases": "359",
+							"Total Dorm": "48325",
+							"Total Cases": "51158"
+						},
+						{
+							"Date": "2020-07-29",
+							"Community": "3",
+							"Dorm": "327",
+							"Imported": "4",
+							"Daily Cases": "334",
+							"Total Dorm": "48652",
+							"Total Cases": "51492"
+						},
+						{
+							"Date": "2020-07-30",
+							"Community": "4",
+							"Dorm": "270",
+							"Imported": "4",
+							"Daily Cases": "278",
+							"Total Dorm": "48922",
+							"Total Cases": "51770"
+						},
+						{
+							"Date": "2020-07-31",
+							"Community": "3",
+							"Dorm": "390",
+							"Imported": "3",
+							"Daily Cases": "396",
+							"Total Dorm": "49312",
+							"Total Cases": "52166"
+						},
+						{
+							"Date": "2020-08-01",
+							"Community": "1",
+							"Dorm": "301",
+							"Imported": "5",
+							"Daily Cases": "307",
+							"Total Dorm": "49613",
+							"Total Cases": "52473"
+						},
+						{
+							"Date": "2020-08-02",
+							"Community": "1",
+							"Dorm": "307",
+							"Imported": "5",
+							"Daily Cases": "313",
+							"Total Dorm": "49920",
+							"Total Cases": "52786"
+						},
+						{
+							"Date": "2020-08-03",
+							"Community": "1",
+							"Dorm": "216",
+							"Imported": "9",
+							"Daily Cases": "226",
+							"Total Dorm": "50136",
+							"Total Cases": "53012"
+						},
+						{
+							"Date": "2020-08-04",
+							"Community": "2",
+							"Dorm": "286",
+							"Imported": "7",
+							"Daily Cases": "295",
+							"Total Dorm": "50422",
+							"Total Cases": "53307"
+						},
+						{
+							"Date": "2020-08-05",
+							"Community": "1",
+							"Dorm": "903",
+							"Imported": "4",
+							"Daily Cases": "908",
+							"Total Dorm": "51325",
+							"Total Cases": "54215"
+						},
+						{
+							"Date": "2020-08-06",
+							"Community": "4",
+							"Dorm": "293",
+							"Imported": "4",
+							"Daily Cases": "301",
+							"Total Dorm": "51618",
+							"Total Cases": "54516"
+						},
+						{
+							"Date": "2020-08-07",
+							"Community": "1",
+							"Dorm": "235",
+							"Imported": "6",
+							"Daily Cases": "242",
+							"Total Dorm": "51853",
+							"Total Cases": "54758"
+						},
+						{
+							"Date": "2020-08-08",
+							"Community": "1",
+							"Dorm": "125",
+							"Imported": "6",
+							"Daily Cases": "132",
+							"Total Dorm": "51978",
+							"Total Cases": "54890"
+						},
+						{
+							"Date": "2020-08-09",
+							"Community": "1",
+							"Dorm": "171",
+							"Imported": "3",
+							"Daily Cases": "175",
+							"Total Dorm": "52149",
+							"Total Cases": "55065"
+						},
+						{
+							"Date": "2020-08-10",
+							"Community": "1",
+							"Dorm": "175",
+							"Imported": "12",
+							"Daily Cases": "188",
+							"Total Dorm": "52324",
+							"Total Cases": "55253"
+						},
+						{
+							"Date": "2020-08-11",
+							"Community": "2",
+							"Dorm": "56",
+							"Imported": "3",
+							"Daily Cases": "61",
+							"Total Dorm": "52380",
+							"Total Cases": "55314"
+						},
+						{
+							"Date": "2020-08-12",
+							"Community": "1",
+							"Dorm": "30",
+							"Imported": "11",
+							"Daily Cases": "42",
+							"Total Dorm": "52410",
+							"Total Cases": "55356"
+						},
+						{
+							"Date": "2020-08-13",
+							"Community": "5",
+							"Dorm": "91",
+							"Imported": "6",
+							"Daily Cases": "102",
+							"Total Dorm": "52501",
+							"Total Cases": "55458"
+						},
+						{
+							"Date": "2020-08-14",
+							"Community": "0",
+							"Dorm": "79",
+							"Imported": "4",
+							"Daily Cases": "83",
+							"Total Dorm": "52580",
+							"Total Cases": "55541"
+						},
+						{
+							"Date": "2020-08-15",
+							"Community": "3",
+							"Dorm": "62",
+							"Imported": "16",
+							"Daily Cases": "81",
+							"Total Dorm": "52642",
+							"Total Cases": "55622"
+						},
+						{
+							"Date": "2020-08-16",
+							"Community": "2",
+							"Dorm": "78",
+							"Imported": "6",
+							"Daily Cases": "86",
+							"Total Dorm": "52720",
+							"Total Cases": "55708"
+						},
+						{
+							"Date": "2020-08-17",
+							"Community": "0",
+							"Dorm": "85",
+							"Imported": "6",
+							"Daily Cases": "91",
+							"Total Dorm": "52805",
+							"Total Cases": "55799"
+						},
+						{
+							"Date": "2020-08-18",
+							"Community": "1",
+							"Dorm": "97",
+							"Imported": "2",
+							"Daily Cases": "100",
+							"Total Dorm": "52902",
+							"Total Cases": "55899"
+						},
+						{
+							"Date": "2020-08-19",
+							"Community": "2",
+							"Dorm": "85",
+							"Imported": "6",
+							"Daily Cases": "93",
+							"Total Dorm": "52987",
+							"Total Cases": "55992"
+						},
+						{
+							"Date": "2020-08-20",
+							"Community": "0",
+							"Dorm": "66",
+							"Imported": "2",
+							"Daily Cases": "68",
+							"Total Dorm": "53053",
+							"Total Cases": "56060"
+						},
+						{
+							"Date": "2020-08-21",
+							"Community": "6",
+							"Dorm": "97",
+							"Imported": "13",
+							"Daily Cases": "116",
+							"Total Dorm": "53150",
+							"Total Cases": "56176"
+						},
+						{
+							"Date": "2020-08-22",
+							"Community": "2",
+							"Dorm": "43",
+							"Imported": "5",
+							"Daily Cases": "50",
+							"Total Dorm": "53193",
+							"Total Cases": "56226"
+						},
+						{
+							"Date": "2020-08-23",
+							"Community": "1",
+							"Dorm": "73",
+							"Imported": "13",
+							"Daily Cases": "87",
+							"Total Dorm": "53266",
+							"Total Cases": "56313"
+						},
+						{
+							"Date": "2020-08-24",
+							"Community": "1",
+							"Dorm": "43",
+							"Imported": "7",
+							"Daily Cases": "51",
+							"Total Dorm": "53309",
+							"Total Cases": "56364"
+						},
+						{
+							"Date": "2020-08-25",
+							"Community": "0",
+							"Dorm": "30",
+							"Imported": "1",
+							"Daily Cases": "31",
+							"Total Dorm": "53339",
+							"Total Cases": "56395"
+						},
+						{
+							"Date": "2020-08-26",
+							"Community": "3",
+							"Dorm": "47",
+							"Imported": "10",
+							"Daily Cases": "60",
+							"Total Dorm": "53386",
+							"Total Cases": "56455"
+						},
+						{
+							"Date": "2020-08-27",
+							"Community": "2",
+							"Dorm": "70",
+							"Imported": "5",
+							"Daily Cases": "77",
+							"Total Dorm": "53456",
+							"Total Cases": "56532"
+						},
+						{
+							"Date": "2020-08-28",
+							"Community": "4",
+							"Dorm": "80",
+							"Imported": "10",
+							"Daily Cases": "94",
+							"Total Dorm": "53536",
+							"Total Cases": "56626"
+						},
+						{
+							"Date": "2020-08-29",
+							"Community": "1",
+							"Dorm": "47",
+							"Imported": "3",
+							"Daily Cases": "51",
+							"Total Dorm": "53583",
+							"Total Cases": "56677"
+						},
+						{
+							"Date": "2020-08-30",
+							"Community": "8",
+							"Dorm": "38",
+							"Imported": "7",
+							"Daily Cases": "53",
+							"Total Dorm": "53621",
+							"Total Cases": "56730"
+						},
+						{
+							"Date": "2020-08-31",
+							"Community": "3",
+							"Dorm": "31",
+							"Imported": "7",
+							"Daily Cases": "41",
+							"Total Dorm": "53652",
+							"Total Cases": "56771"
+						},
+						{
+							"Date": "2020-09-01",
+							"Community": "1",
+							"Dorm": "32",
+							"Imported": "7",
+							"Daily Cases": "40",
+							"Total Dorm": "53684",
+							"Total Cases": "56811"
+						},
+						{
+							"Date": "2020-09-02",
+							"Community": "3",
+							"Dorm": "43",
+							"Imported": "3",
+							"Daily Cases": "49",
+							"Total Dorm": "53727",
+							"Total Cases": "56860"
+						},
+						{
+							"Date": "2020-09-03",
+							"Community": "2",
+							"Dorm": "41",
+							"Imported": "5",
+							"Daily Cases": "48",
+							"Total Dorm": "53768",
+							"Total Cases": "56908"
+						},
+						{
+							"Date": "2020-09-04",
+							"Community": "0",
+							"Dorm": "37",
+							"Imported": "3",
+							"Daily Cases": "40",
+							"Total Dorm": "53805",
+							"Total Cases": "56948"
+						},
+						{
+							"Date": "2020-09-05",
+							"Community": "3",
+							"Dorm": "29",
+							"Imported": "2",
+							"Daily Cases": "33",
+							"Total Dorm": "53834",
+							"Total Cases": "56981"
+						},
+						{
+							"Date": "2020-09-06",
+							"Community": "4",
+							"Dorm": "23",
+							"Imported": "13",
+							"Daily Cases": "40",
+							"Total Dorm": "53857",
+							"Total Cases": "57021"
+						},
+						{
+							"Date": "2020-09-07",
+							"Community": "1",
+							"Dorm": "18",
+							"Imported": "3",
+							"Daily Cases": "22",
+							"Total Dorm": "53875",
+							"Total Cases": "57043"
+						},
+						{
+							"Date": "2020-09-08",
+							"Community": "0",
+							"Dorm": "46",
+							"Imported": "1",
+							"Daily Cases": "47",
+							"Total Dorm": "53921",
+							"Total Cases": "57090"
+						},
+						{
+							"Date": "2020-09-09",
+							"Community": "1",
+							"Dorm": "60",
+							"Imported": "14",
+							"Daily Cases": "75",
+							"Total Dorm": "53981",
+							"Total Cases": "57165"
+						},
+						{
+							"Date": "2020-09-10",
+							"Community": "2",
+							"Dorm": "55",
+							"Imported": "6",
+							"Daily Cases": "63",
+							"Total Dorm": "54036",
+							"Total Cases": "57228"
+						},
+						{
+							"Date": "2020-09-11",
+							"Community": "0",
+							"Dorm": "73",
+							"Imported": "13",
+							"Daily Cases": "86",
+							"Total Dorm": "54109",
+							"Total Cases": "57314"
+						},
+						{
+							"Date": "2020-09-12",
+							"Community": "4",
+							"Dorm": "28",
+							"Imported": "10",
+							"Daily Cases": "42",
+							"Total Dorm": "54137",
+							"Total Cases": "57356"
+						},
+						{
+							"Date": "2020-09-13",
+							"Community": "1",
+							"Dorm": "40",
+							"Imported": "8",
+							"Daily Cases": "49",
+							"Total Dorm": "54177",
+							"Total Cases": "57405"
+						},
+						{
+							"Date": "2020-09-14",
+							"Community": "0",
+							"Dorm": "43",
+							"Imported": "5",
+							"Daily Cases": "48",
+							"Total Dorm": "54220",
+							"Total Cases": "57453"
+						},
+						{
+							"Date": "2020-09-15",
+							"Community": "0",
+							"Dorm": "28",
+							"Imported": "6",
+							"Daily Cases": "34",
+							"Total Dorm": "54248",
+							"Total Cases": "57487"
+						},
+						{
+							"Date": "2020-09-16",
+							"Community": "2",
+							"Dorm": "23",
+							"Imported": "2",
+							"Daily Cases": "27",
+							"Total Dorm": "54271",
+							"Total Cases": "57514"
+						},
+						{
+							"Date": "2020-09-17",
+							"Community": "1",
+							"Dorm": "15",
+							"Imported": "2",
+							"Daily Cases": "18",
+							"Total Dorm": "54286",
+							"Total Cases": "57532"
+						},
+						{
+							"Date": "2020-09-18",
+							"Community": "1",
+							"Dorm": "9",
+							"Imported": "1",
+							"Daily Cases": "10",
+							"Total Dorm": "54295",
+							"Total Cases": "57542"
+						},
+						{
+							"Date": "2020-09-19",
+							"Community": "1",
+							"Dorm": "9",
+							"Imported": "5",
+							"Daily Cases": "15",
+							"Total Dorm": "54304",
+							"Total Cases": "57557"
+						},
+						{
+							"Date": "2020-09-20",
+							"Community": "1",
+							"Dorm": "13",
+							"Imported": "4",
+							"Daily Cases": "18",
+							"Total Dorm": "54317",
+							"Total Cases": "57575"
+						},
+						{
+							"Date": "2020-09-21",
+							"Community": "0",
+							"Dorm": "22",
+							"Imported": "9",
+							"Daily Cases": "31",
+							"Total Dorm": "54339",
+							"Total Cases": "57606"
+						},
+						{
+							"Date": "2020-09-22",
+							"Community": "0",
+							"Dorm": "20",
+							"Imported": "1",
+							"Daily Cases": "21",
+							"Total Dorm": "54359",
+							"Total Cases": "57627"
+						},
+						{
+							"Date": "2020-09-23",
+							"Community": "1",
+							"Dorm": "7",
+							"Imported": "4",
+							"Daily Cases": "12",
+							"Total Dorm": "54366",
+							"Total Cases": "57639"
+						},
+						{
+							"Date": "2020-09-24",
+							"Community": "0",
+							"Dorm": "10",
+							"Imported": "5",
+							"Daily Cases": "15",
+							"Total Dorm": "54376",
+							"Total Cases": "57654"
+						},
+						{
+							"Date": "2020-09-25",
+							"Community": "0",
+							"Dorm": "9",
+							"Imported": "2",
+							"Daily Cases": "11",
+							"Total Dorm": "54385",
+							"Total Cases": "57665"
+						},
+						{
+							"Date": "2020-09-26",
+							"Community": "1",
+							"Dorm": "14",
+							"Imported": "5",
+							"Daily Cases": "20",
+							"Total Dorm": "54399",
+							"Total Cases": "57685"
+						},
+						{
+							"Date": "2020-09-27",
+							"Community": "0",
+							"Dorm": "10",
+							"Imported": "5",
+							"Daily Cases": "15",
+							"Total Dorm": "54409",
+							"Total Cases": "57700"
+						},
+						{
+							"Date": "2020-09-28",
+							"Community": "2",
+							"Dorm": "7",
+							"Imported": "6",
+							"Daily Cases": "15",
+							"Total Dorm": "54416",
+							"Total Cases": "57715"
+						},
+						{
+							"Date": "2020-09-29",
+							"Community": "1",
+							"Dorm": "17",
+							"Imported": "9",
+							"Daily Cases": "27",
+							"Total Dorm": "54433",
+							"Total Cases": "57742"
+						},
+						{
+							"Date": "2020-09-30",
+							"Community": "3",
+							"Dorm": "16",
+							"Imported": "4",
+							"Daily Cases": "23",
+							"Total Dorm": "54449",
+							"Total Cases": "57765"
+						},
+						{
+							"Date": "2020-10-01",
+							"Community": "1",
+							"Dorm": "3",
+							"Imported": "15",
+							"Daily Cases": "19",
+							"Total Dorm": "54452",
+							"Total Cases": "57784"
+						},
+						{
+							"Date": "2020-10-02",
+							"Community": "1",
+							"Dorm": "4",
+							"Imported": "5",
+							"Daily Cases": "10",
+							"Total Dorm": "54456",
+							"Total Cases": "57794"
+						},
+						{
+							"Date": "2020-10-03",
+							"Community": "1",
+							"Dorm": "1",
+							"Imported": "4",
+							"Daily Cases": "6",
+							"Total Dorm": "54457",
+							"Total Cases": "57800"
+						},
+						{
+							"Date": "2020-10-04",
+							"Community": "2",
+							"Dorm": "4",
+							"Imported": "6",
+							"Daily Cases": "12",
+							"Total Dorm": "54461",
+							"Total Cases": "57812"
+						},
+						{
+							"Date": "2020-10-05",
+							"Community": "1",
+							"Dorm": "5",
+							"Imported": "1",
+							"Daily Cases": "7",
+							"Total Dorm": "54466",
+							"Total Cases": "57819"
+						},
+						{
+							"Date": "2020-10-06",
+							"Community": "2",
+							"Dorm": "5",
+							"Imported": "4",
+							"Daily Cases": "11",
+							"Total Dorm": "54471",
+							"Total Cases": "57830"
+						},
+						{
+							"Date": "2020-10-07",
+							"Community": "0",
+							"Dorm": "4",
+							"Imported": "6",
+							"Daily Cases": "10",
+							"Total Dorm": "54475",
+							"Total Cases": "57840"
+						},
+						{
+							"Date": "2020-10-08",
+							"Community": "0",
+							"Dorm": "4",
+							"Imported": "5",
+							"Daily Cases": "9",
+							"Total Dorm": "54479",
+							"Total Cases": "57849"
+						},
+						{
+							"Date": "2020-10-09",
+							"Community": "0",
+							"Dorm": "1",
+							"Imported": "9",
+							"Daily Cases": "10",
+							"Total Dorm": "54480",
+							"Total Cases": "57859"
+						},
+						{
+							"Date": "2020-10-10",
+							"Community": "1",
+							"Dorm": "1",
+							"Imported": "5",
+							"Daily Cases": "7",
+							"Total Dorm": "54481",
+							"Total Cases": "57866"
+						},
+						{
+							"Date": "2020-10-11",
+							"Community": "0",
+							"Dorm": "3",
+							"Imported": "7",
+							"Daily Cases": "10",
+							"Total Dorm": "54484",
+							"Total Cases": "57876"
+						},
+						{
+							"Date": "2020-10-12",
+							"Community": "1",
+							"Dorm": "1",
+							"Imported": "2",
+							"Daily Cases": "4",
+							"Total Dorm": "54485",
+							"Total Cases": "57880"
+						},
+						{
+							"Date": "2020-10-13",
+							"Community": "0",
+							"Dorm": "0",
+							"Imported": "4",
+							"Daily Cases": "4",
+							"Total Dorm": "54485",
+							"Total Cases": "57884"
+						},
+						{
+							"Date": "2020-10-14",
+							"Community": "2",
+							"Dorm": "0",
+							"Imported": "3",
+							"Daily Cases": "5",
+							"Total Dorm": "54485",
+							"Total Cases": "57889"
+						},
+						{
+							"Date": "2020-10-15",
+							"Community": "0",
+							"Dorm": "1",
+							"Imported": "2",
+							"Daily Cases": "3",
+							"Total Dorm": "54486",
+							"Total Cases": "57892"
+						},
+						{
+							"Date": "2020-10-16",
+							"Community": "0",
+							"Dorm": "1",
+							"Imported": "8",
+							"Daily Cases": "9",
+							"Total Dorm": "54487",
+							"Total Cases": "57901"
+						},
+						{
+							"Date": "2020-10-17",
+							"Community": "1",
+							"Dorm": "1",
+							"Imported": "1",
+							"Daily Cases": "3",
+							"Total Dorm": "54488",
+							"Total Cases": "57904"
+						},
+						{
+							"Date": "2020-10-18",
+							"Community": "1",
+							"Dorm": "1",
+							"Imported": "5",
+							"Daily Cases": "7",
+							"Total Dorm": "54489",
+							"Total Cases": "57911"
+						},
+						{
+							"Date": "2020-10-19",
+							"Community": "0",
+							"Dorm": "0",
+							"Imported": "4",
+							"Daily Cases": "4",
+							"Total Dorm": "54489",
+							"Total Cases": "57915"
+						},
+						{
+							"Date": "2020-10-20",
+							"Community": "0",
+							"Dorm": "2",
+							"Imported": "4",
+							"Daily Cases": "6",
+							"Total Dorm": "54491",
+							"Total Cases": "57921"
+						},
+						{
+							"Date": "2020-10-21",
+							"Community": "0",
+							"Dorm": "0",
+							"Imported": "12",
+							"Daily Cases": "12",
+							"Total Dorm": "54491",
+							"Total Cases": "57933"
+						},
+						{
+							"Date": "2020-10-22",
+							"Community": "0",
+							"Dorm": "1",
+							"Imported": "7",
+							"Daily Cases": "8",
+							"Total Dorm": "54492",
+							"Total Cases": "57941"
+						},
+						{
+							"Date": "2020-10-23",
+							"Community": "0",
+							"Dorm": "0",
+							"Imported": "10",
+							"Daily Cases": "10",
+							"Total Dorm": "54492",
+							"Total Cases": "57951"
+						},
+						{
+							"Date": "2020-10-24",
+							"Community": "2",
+							"Dorm": "1",
+							"Imported": "11",
+							"Daily Cases": "14",
+							"Total Dorm": "54493",
+							"Total Cases": "57965"
+						},
+						{
+							"Date": "2020-10-25",
+							"Community": "0",
+							"Dorm": "2",
+							"Imported": "3",
+							"Daily Cases": "5",
+							"Total Dorm": "54495",
+							"Total Cases": "57970"
+						},
+						{
+							"Date": "2020-10-26",
+							"Community": "0",
+							"Dorm": "1",
+							"Imported": "2",
+							"Daily Cases": "3",
+							"Total Dorm": "54496",
+							"Total Cases": "57973"
+						},
+						{
+							"Date": "2020-10-27",
+							"Community": "1",
+							"Dorm": "0",
+							"Imported": "6",
+							"Daily Cases": "7",
+							"Total Dorm": "54496",
+							"Total Cases": "57980"
+						},
+						{
+							"Date": "2020-10-28",
+							"Community": "0",
+							"Dorm": "0",
+							"Imported": "7",
+							"Daily Cases": "7",
+							"Total Dorm": "54496",
+							"Total Cases": "57987"
+						},
+						{
+							"Date": "2020-10-29",
+							"Community": "0",
+							"Dorm": "0",
+							"Imported": "7",
+							"Daily Cases": "7",
+							"Total Dorm": "54496",
+							"Total Cases": "57994"
+						}
+					]
+				}
+			);
+		</script>
+	</head>
+	<body>
+		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+	</body>
+</html>
