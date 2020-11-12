@@ -6,6 +6,7 @@
 		<!-- amCharts javascript sources -->
 		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
 		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		//<script type="text/javascript" src="world-cases.js"></script>
 
 
 		<!-- amCharts javascript code -->
@@ -2075,8 +2076,235 @@
 				}
 			);
 		</script>
+		
+		
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<!-- Chart code -->
+<script>
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+// Create chart instance
+var chart = am4core.create("chartdiv1", am4charts.XYChart3D);
+
+// Add data
+chart.data = [{
+  "country": "United States",
+  "cases": 10708728
+}, {
+  "country": "India",
+  "cases": 8684039
+}, {
+  "country": "Brazil",
+  "cases": 5749007
+}, {
+  "country": "France",
+  "cases": 1865538
+}, {
+  "country": "Russia",
+  "cases": 1836960
+}, {
+  "country": "Spain",
+  "cases": 1463093
+}, {
+  "country": "Argentina",
+  "cases": 1273356
+}, {
+  "country": "United Kingdom",
+  "cases": 1256725
+}, {
+  "country": "Colombia",
+  "cases": 1165326
+}, {
+  "country": "Italy",
+  "cases": 1028424
+
+}];
+
+// Create axes
+let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+categoryAxis.dataFields.category = "country";
+categoryAxis.renderer.labels.template.rotation = 270;
+categoryAxis.renderer.labels.template.hideOversized = false;
+categoryAxis.renderer.minGridDistance = 20;
+categoryAxis.renderer.labels.template.horizontalCenter = "right";
+categoryAxis.renderer.labels.template.verticalCenter = "middle";
+categoryAxis.tooltip.label.rotation = 270;
+categoryAxis.tooltip.label.horizontalCenter = "right";
+categoryAxis.tooltip.label.verticalCenter = "middle";
+categoryAxis.title.text = "World Top 10 Covid-19 Confirmed Cases";
+categoryAxis.title.fontWeight = "bold";
+categoryAxis.title.fontSize = "24";
+
+let image = new am4core.Image();
+image.horizontalCenter = "middle";
+image.width = 20;
+image.height = 20;
+image.verticalCenter = "bottom";
+image.adapter.add("href", (href, target)=>{
+  let category = target.dataItem.category;
+  if(category){
+    return "https://www.amcharts.com/wp-content/uploads/flags/" + category.split(" ").join("-").toLowerCase() + ".svg";
+  }
+  return href;
+})
+categoryAxis.dataItems.template.bullet = image;
+
+
+let valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+valueAxis.title.text = "Countries";
+valueAxis.title.text = "No. of Confirmed Cases";
+valueAxis.title.fontWeight = "bold";
+
+// Create series
+var series = chart.series.push(new am4charts.ColumnSeries3D());
+series.dataFields.valueY = "cases";
+series.dataFields.categoryX = "country";
+series.name = "cases";
+series.tooltipText = "[bold]{valueY}[/]";
+series.columns.template.fillOpacity = .8;
+
+var columnTemplate = series.columns.template;
+columnTemplate.strokeWidth = 2;
+columnTemplate.strokeOpacity = 1;
+columnTemplate.stroke = am4core.color("#FFFFFF");
+
+columnTemplate.adapter.add("fill", function(fill, target) {
+  return chart.colors.getIndex(target.dataItem.index);
+})
+
+columnTemplate.adapter.add("stroke", function(stroke, target) {
+  return chart.colors.getIndex(target.dataItem.index);
+})
+
+chart.cursor = new am4charts.XYCursor();
+chart.cursor.lineX.strokeOpacity = 0;
+chart.cursor.lineY.strokeOpacity = 0;
+
+}); // end am4core.ready()
+</script>
+
+<!-- Chart code -->
+<script>
+    am4core.ready(function() {
+    
+    // Themes begin
+    am4core.useTheme(am4themes_animated);
+    // Themes end
+    
+    // Create chart instance
+    var chart = am4core.create("chartdiv2", am4charts.XYChart3D);
+	
+    // Add data
+    chart.data = [{
+      "country": "United States",
+      "death": 247398
+    }, {
+      "country": "Brazil",
+      "death": 163406
+    }, {
+      "country": "India",
+      "death": 128165
+    }, {
+      "country": "Mexico",
+      "death": 96430
+    }, {
+      "country": "United Kingdom",
+      "death": 50365
+    }, {
+      "country": "Italy",
+      "death": 42953
+    }, {
+      "country": "France",
+      "death": 42535
+    }, {
+      "country": "Spain",
+      "death": 40105
+    }, {
+      "country": "Iran",
+      "death": 39664
+    }, {
+      "country": "Peru",
+      "death": 35031
+    
+    }];
+    
+    // Create axes
+    let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+    categoryAxis.dataFields.category = "country";
+    categoryAxis.renderer.labels.template.rotation = 270;
+    categoryAxis.renderer.labels.template.hideOversized = false;
+    categoryAxis.renderer.minGridDistance = 20;
+    categoryAxis.renderer.labels.template.horizontalCenter = "right";
+    categoryAxis.renderer.labels.template.verticalCenter = "middle";
+    categoryAxis.tooltip.label.rotation = 270;
+    categoryAxis.tooltip.label.horizontalCenter = "right";
+    categoryAxis.tooltip.label.verticalCenter = "middle";
+    categoryAxis.title.text = "World Top 10 Covid-19 Death Toll";
+    categoryAxis.title.fontWeight = "bold";
+    categoryAxis.title.fontSize = "24";
+
+    let image = new am4core.Image();
+    image.horizontalCenter = "middle";
+    image.width = 20;
+    image.height = 20;
+    image.verticalCenter = "bottom";
+    image.adapter.add("href", (href, target)=>{
+      let category = target.dataItem.category;
+      if(category){
+        return "https://www.amcharts.com/wp-content/uploads/flags/" + category.split(" ").join("-").toLowerCase() + ".svg";
+      }
+      return href;
+    })
+    categoryAxis.dataItems.template.bullet = image;
+    
+    
+    let valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+    //valueAxis.title.text = "Countries";
+    valueAxis.title.text = "No. of Deaths";
+    valueAxis.title.fontWeight = "bold";
+    
+    // Create series
+    var series = chart.series.push(new am4charts.ColumnSeries3D());
+    series.dataFields.valueY = "death";
+    series.dataFields.categoryX = "country";
+    series.name = "death";
+    series.tooltipText = "[bold]{valueY}[/]";
+    series.columns.template.fillOpacity = .8;
+    
+    var columnTemplate = series.columns.template;
+    columnTemplate.strokeWidth = 2;
+    columnTemplate.strokeOpacity = 1;
+    columnTemplate.stroke = am4core.color("#FFFFFF");
+    
+    columnTemplate.adapter.add("fill", function(fill, target) {
+      return chart.colors.getIndex(target.dataItem.index);
+    })
+    
+    columnTemplate.adapter.add("stroke", function(stroke, target) {
+      return chart.colors.getIndex(target.dataItem.index);
+    })
+    
+    chart.cursor = new am4charts.XYCursor();
+    chart.cursor.lineX.strokeOpacity = 0;
+    chart.cursor.lineY.strokeOpacity = 0;
+    
+    }); // end am4core.ready()
+    </script>
 	</head>
+
 	<body>
-		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
-	</body>
+		<div id="chartdiv" style="width: 100%; height: 500px; background-color: #FFFFFF;" ></div>
+	<br>	        
+        <div id="chartdiv1" style="width: 50%; height: 500px; background-color: #FFFFFF;" ></div>
+    <br>
+        <div id="chartdiv2" style="width: 50%; height: 500px; background-color: #FFFFFF;" ></div>
+    </body>
 </html>
