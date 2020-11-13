@@ -2089,6 +2089,15 @@
 							"Daily Cases": "11",
 							"Total Dorm": "54502",
 							"Total Cases": "58102"
+						},
+						{
+							"Date": "2020-11-13",
+							"Community": "0",
+							"Dorm": "0",
+							"Imported": "12",
+							"Daily Cases": "12",
+							"Total Dorm": "54502",
+							"Total Cases": "58114"
 						}
 					]
 				}
@@ -2163,8 +2172,8 @@ categoryAxis.title.fontSize = "24";
 
 let image = new am4core.Image();
 image.horizontalCenter = "middle";
-image.width = 20;
-image.height = 20;
+image.width = 25;
+image.height = 25;
 image.verticalCenter = "bottom";
 image.adapter.add("href", (href, target)=>{
   let category = target.dataItem.category;
@@ -2180,6 +2189,8 @@ let valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
 valueAxis.title.text = "Countries";
 valueAxis.title.text = "No. of Confirmed Cases";
 valueAxis.title.fontWeight = "bold";
+valueAxis.min = 0;
+valueAxis.extraMax = 0.1;
 
 // Create series
 var series = chart.series.push(new am4charts.ColumnSeries3D());
@@ -2188,6 +2199,12 @@ series.dataFields.categoryX = "country";
 series.name = "cases";
 series.tooltipText = "[bold]{valueY}[/]";
 series.columns.template.fillOpacity = .8;
+	
+var labelBullet = series.bullets.push(new am4charts.LabelBullet());
+labelBullet.label.verticalCenter = "bottom";
+labelBullet.label.dy = -15;
+labelBullet.label.text = "{valueY}";
+labelBullet.fontWeight = "bold";
 
 var columnTemplate = series.columns.template;
 columnTemplate.strokeWidth = 2;
@@ -2271,8 +2288,8 @@ chart.cursor.lineY.strokeOpacity = 0;
 
     let image = new am4core.Image();
     image.horizontalCenter = "middle";
-    image.width = 20;
-    image.height = 20;
+    image.width = 25;
+    image.height = 25;
     image.verticalCenter = "bottom";
     image.adapter.add("href", (href, target)=>{
       let category = target.dataItem.category;
@@ -2288,6 +2305,8 @@ chart.cursor.lineY.strokeOpacity = 0;
     //valueAxis.title.text = "Countries";
     valueAxis.title.text = "No. of Deaths";
     valueAxis.title.fontWeight = "bold";
+    valueAxis.min = 0;
+    valueAxis.extraMax = 0.1;
     
     // Create series
     var series = chart.series.push(new am4charts.ColumnSeries3D());
@@ -2296,6 +2315,12 @@ chart.cursor.lineY.strokeOpacity = 0;
     series.name = "death";
     series.tooltipText = "[bold]{valueY}[/]";
     series.columns.template.fillOpacity = .8;
+	    
+    var labelBullet = series.bullets.push(new am4charts.LabelBullet());
+    labelBullet.label.verticalCenter = "bottom";
+    labelBullet.label.dy = -15;
+    labelBullet.label.text = "{valueY}";
+    labelBullet.fontWeight = "bold";
     
     var columnTemplate = series.columns.template;
     columnTemplate.strokeWidth = 2;
@@ -2321,8 +2346,8 @@ chart.cursor.lineY.strokeOpacity = 0;
 	<body>
 		<div id="chartdiv" style="width: 100%; height: 500px; background-color: #FFFFFF;" ></div>
 	<br>	        
-        <div id="chartdiv1" style="width: 80%; height: 500px; background-color: #FFFFFF;" ></div>
+        <div id="chartdiv1" style="width: 100%; height: 500px; background-color: #FFFFFF;" ></div>
     <br>
-        <div id="chartdiv2" style="width: 80%; height: 500px; background-color: #FFFFFF;" ></div>
+        <div id="chartdiv2" style="width: 100%; height: 500px; background-color: #FFFFFF;" ></div>
     </body>
 </html>
