@@ -2124,51 +2124,52 @@ var chart = am4core.create("chartdiv1", am4charts.XYChart3D);
 // Add data
 chart.data = [{
   "country": "United States",
-  "cases": 10873936
+  "cases": 11064364
 }, {
   "country": "India",
-  "cases": 8728795
+  "cases": 8773479
 }, {
   "country": "Brazil",
-  "cases": 5783647
+  "cases": 5819496
 }, {
   "country": "France",
-  "cases": 1898710
+  "cases": 1922504
 }, {
   "country": "Russia",
-  "cases": 1858568
+  "cases": 1880551
 }, {
   "country": "Spain",
-  "cases": 1484868
+  "cases": 1492608
 }, {
   "country": "United Kingdom",
-  "cases": 1290195
+  "cases": 1317496
 }, {
   "country": "Argentina",
-  "cases": 1284519
+  "cases": 1296378
 }, {
   "country": "Colombia",
-  "cases": 1174012
+  "cases": 1182697
 }, {
   "country": "Italy",
-  "cases": 1066401
+  "cases": 1107303
 
 }];
 
 // Create axes
 let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
 categoryAxis.dataFields.category = "country";
-categoryAxis.renderer.labels.template.rotation = 270;
+//categoryAxis.renderer.labels.template.rotation = 270;
 categoryAxis.renderer.labels.template.hideOversized = false;
 categoryAxis.renderer.minGridDistance = 20;
-categoryAxis.renderer.labels.template.horizontalCenter = "right";
+categoryAxis.renderer.labels.template.horizontalCenter = "middle";
 categoryAxis.renderer.labels.template.verticalCenter = "middle";
-categoryAxis.tooltip.label.rotation = 270;
-categoryAxis.tooltip.label.horizontalCenter = "right";
-categoryAxis.tooltip.label.verticalCenter = "middle";
+//categoryAxis.tooltip.label.rotation = 270;
+//categoryAxis.tooltip.label.horizontalCenter = "right";
+//categoryAxis.tooltip.label.verticalCenter = "middle";
 categoryAxis.title.text = "World Top 10 Covid-19 Confirmed Cases";
 categoryAxis.title.fontWeight = "bold";
 categoryAxis.title.fontSize = "24";
+categoryAxis.fontWeight = "bold";
 
 let image = new am4core.Image();
 image.horizontalCenter = "middle";
@@ -2240,51 +2241,52 @@ chart.cursor.lineY.strokeOpacity = 0;
     // Add data
     chart.data = [{
       "country": "United States",
-      "death": 248585
+      "death": 249975
     }, {
       "country": "Brazil",
-      "death": 164332
+      "death": 164946
     }, {
       "country": "India",
-      "death": 128686
+      "death": 129225
     }, {
       "country": "Mexico",
-      "death": 97056
+      "death": 97624
     }, {
       "country": "United Kingdom",
-      "death": 50928
+      "death": 51304
     }, {
       "country": "Italy",
-      "death": 43589
+      "death": 44139
     }, {
       "country": "France",
-      "death": 42960
+      "death": 43892
     }, {
       "country": "Spain",
-      "death": 40461
+      "death": 40769
     }, {
       "country": "Iran",
-      "death": 40121
+      "death": 40582
     }, {
       "country": "Peru",
-      "death": 35067
+      "death": 35106
     
     }];
     
     // Create axes
     let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
     categoryAxis.dataFields.category = "country";
-    categoryAxis.renderer.labels.template.rotation = 270;
+    //categoryAxis.renderer.labels.template.rotation = 270;
     categoryAxis.renderer.labels.template.hideOversized = false;
     categoryAxis.renderer.minGridDistance = 20;
-    categoryAxis.renderer.labels.template.horizontalCenter = "right";
+    categoryAxis.renderer.labels.template.horizontalCenter = "middle";
     categoryAxis.renderer.labels.template.verticalCenter = "middle";
-    categoryAxis.tooltip.label.rotation = 270;
-    categoryAxis.tooltip.label.horizontalCenter = "right";
-    categoryAxis.tooltip.label.verticalCenter = "middle";
+    //categoryAxis.tooltip.label.rotation = 270;
+    //categoryAxis.tooltip.label.horizontalCenter = "right";
+    //categoryAxis.tooltip.label.verticalCenter = "middle";
     categoryAxis.title.text = "World Top 10 Covid-19 Death Toll";
     categoryAxis.title.fontWeight = "bold";
     categoryAxis.title.fontSize = "24";
+    categoryAxis.fontWeight = "bold";
 
     let image = new am4core.Image();
     image.horizontalCenter = "middle";
@@ -2306,7 +2308,7 @@ chart.cursor.lineY.strokeOpacity = 0;
     valueAxis.title.text = "No. of Deaths";
     valueAxis.title.fontWeight = "bold";
     valueAxis.min = 0;
-    valueAxis.extraMax = 0.1;
+    valueAxis.extraMax = 0.2;
     
     // Create series
     var series = chart.series.push(new am4charts.ColumnSeries3D());
