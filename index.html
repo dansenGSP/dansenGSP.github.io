@@ -2296,6 +2296,15 @@
 							"Daily Cases": "13",
 							"Total Dorm": "54504",
 							"Total Cases": "58255"
+						},
+						{
+							"Date": "2020-12-06",
+							"Community": "0",
+							"Dorm": "0",
+							"Imported": "5",
+							"Daily Cases": "5",
+							"Total Dorm": "54504",
+							"Total Cases": "58260"
 						}
 					]
 				}
@@ -2322,34 +2331,34 @@ var chart = am4core.create("chartdiv1", am4charts.XYChart3D);
 // Add data
 chart.data = [{
   "country": "United States",
-  "cases": 14772535
+  "cases": 14983425
 }, {
   "country": "India",
-  "cases": 9608418
+  "cases": 9644529
 }, {
   "country": "Brazil",
-  "cases": 6534951
+  "cases": 6577177
 }, {
   "country": "Russia",
-  "cases": 2402949
+  "cases": 2431731
 }, {
   "country": "France",
-  "cases": 2268552
+  "cases": 2281475
+}, {
+  "country": "Italy",
+  "cases": 1709991
+}, {
+  "country": "United Kingdom",
+  "cases": 1705971
 }, {
   "country": "Spain",
   "cases": 1699145
 }, {
-  "country": "United Kingdom",
-  "cases": 1690432
-}, {
-  "country": "Italy",
-  "cases": 1688939
-}, {
   "country": "Argentina",
-  "cases": 1454631
+  "cases": 1459832
 }, {
   "country": "Colombia",
-  "cases": 1352607
+  "cases": 1362249
 
 }];
 
@@ -2439,28 +2448,28 @@ chart.cursor.lineY.strokeOpacity = 0;
     // Add data
     chart.data = [{
       "country": "United States",
-      "death": 285550
+      "death": 287825
     }, {
       "country": "Brazil",
-      "death": 175981
+      "death": 176641
     }, {
       "country": "India",
-      "death": 139736
+      "death": 140216
     }, {
       "country": "Mexico",
-      "death": 108863
+      "death": 109456
     }, {
       "country": "United Kingdom",
-      "death": 60617
+      "death": 61014
     }, {
       "country": "Italy",
-      "death": 58852    
+      "death": 59514    
     }, {
       "country": "France",
-      "death": 54767
+      "death": 54981
     }, {
       "country": "Iran",
-      "death": 49695
+      "death": 50016
     }, {
       "country": "Spain",
       "death": 46252
@@ -2546,10 +2555,10 @@ chart.cursor.lineY.strokeOpacity = 0;
     <body>
 	<div id="chartdiv" style="width: 100%; height: 500px; background-color: #FFFFFF;" ></div>
     <br>	
-	<h1 style="color: blue;font-size:20px;margin:50px;">World Total Confirmed Cases: 66,252,020</h1> 
+	<h1 style="color: blue;font-size:20px;margin:50px;">World Total Confirmed Cases: 66,875,143</h1> 
         <div id="chartdiv1" style="width: 100%; height: 500px; background-color: #FFFFFF;" ></div>
     <br>
-	<h1 style="color: red;font-size:20px;margin:50px;">World Total Deaths: 1,524,768</h1>
+	<h1 style="color: red;font-size:20px;margin:50px;">World Total Deaths: 1,534,806</h1>
         <div id="chartdiv2" style="width: 100%; height: 500px; background-color: #FFFFFF;" ></div>
     </body>
 </html>
