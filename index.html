@@ -3610,12 +3610,251 @@
 							"Daily Cases": "24",
 							"Total Dorm": "54517",
 							"Total Cases": "61145"
+						},
+						{
+							"Date": "2021-05-01",                                                                                                                                                       
+							"Community": "7",
+							"Dorm": "2",
+							"Imported": "25",
+							"Daily Cases": "34",
+							"Total Dorm": "54517",
+							"Total Cases": "61179"
 						}
 					]
 				}
 			);
 		</script>
-		
+
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		//<script type="text/javascript" src="world-cases.js"></script>
+
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv3",
+				{
+					"type": "serial",
+					"categoryField": "Date",
+					"dataDateFormat": "YYYY-MM-DD",
+					"categoryAxis": {
+						"parseDates": true
+					},
+					"chartCursor": {
+						"enabled": true,
+						"categoryBalloonDateFormat": "DD MMM YYYY",
+						"leaveCursor": true,
+						"tabIndex": 4
+					},
+					"chartScrollbar": {
+						"enabled": true
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"balloonText": "[[title]] [[value]]",
+							"id": "AmGraph-3",
+							"lineColor": "#008000",
+							"lineThickness": 2,
+							"title": "Community",
+							"valueAxis": "ValueAxis-1",
+							"valueField": "Community"
+						},
+						{
+							"balloonText": "[[title]] [[value]]",
+							"id": "AmGraph-4",
+							"lineColor": "#0000FF",
+							"lineThickness": 2,
+							"title": "7dayAvg",
+							"valueAxis": "ValueAxis-1",
+							"valueField": "7dayAvg"
+						}
+						
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"title": "Daily Community Cases",
+							"titleFontSize": 9
+						}
+						
+					],
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"markerBorderThickness": 0,
+						"useGraphSettings": true
+					},
+					"titles": [
+						{
+							"id": "Title-1",
+							"size": 15,
+							"text": "SG COVID-19 COMMUNITY CASES 7-DAY MOVING AVERAGE"
+						}
+					],
+					"dataProvider": [
+						{
+							"Date": "2021-04-01",                                                                                                                                                       
+							"Community": "0",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-02",                                                                                                                                                       
+							"Community": "0",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-03",                                                                                                                                                       
+							"Community": "1",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-04",                                                                                                                                                       
+							"Community": "0",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-05",                                                                                                                                                       
+							"Community": "0",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-06",                                                                                                                                                       
+							"Community": "0",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-07",                                                                                                                                                       
+							"Community": "1",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-08",                                                                                                                                                       
+							"Community": "0",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-09",                                                                                                                                                       
+							"Community": "0",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-10",                                                                                                                                                       
+							"Community": "1",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-11",                                                                                                                                                       
+							"Community": "0",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-12",                                                                                                                                                       
+							"Community": "0",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-13",                                                                                                                                                       
+							"Community": "0",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-14",                                                                                                                                                       
+							"Community": "1",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-15",                                                                                                                                                       
+							"Community": "0",
+							"7dayAvg": "0"
+						},
+						{
+							"Date": "2021-04-16",                                                                                                                                                       
+							"Community": "2",
+							"7dayAvg": "1"
+						},	
+						{
+							"Date": "2021-04-17",                                                                                                                                                       
+							"Community": "4",
+							"7dayAvg": "1"
+						},
+						{
+							"Date": "2021-04-18",                                                                                                                                                       
+							"Community": "1",
+							"7dayAvg": "1"
+						},
+						{
+							"Date": "2021-04-19",                                                                                                                                                       
+							"Community": "1",
+							"7dayAvg": "1"
+						},
+						{
+							"Date": "2021-04-20",                                                                                                                                                       
+							"Community": "0",
+							"7dayAvg": "1"
+						},
+						{
+							"Date": "2021-04-21",                                                                                                                                                       
+							"Community": "1",
+							"7dayAvg": "1"
+						},
+						{
+							"Date": "2021-04-22",                                                                                                                                                       
+							"Community": "1",
+							"7dayAvg": "1"
+						},
+						{
+							"Date": "2021-04-23",                                                                                                                                                       
+							"Community": "2",
+							"7dayAvg": "1"
+						},
+						{
+							"Date": "2021-04-24",                                                                                                                                                       
+							"Community": "5",
+							"7dayAvg": "2"
+						},
+						{
+							"Date": "2021-04-25",                                                                                                                                                       
+							"Community": "0",
+							"7dayAvg": "1"
+						},
+						{
+							"Date": "2021-04-26",                                                                                                                                                       
+							"Community": "1",
+							"7dayAvg": "1"
+						},
+						{
+							"Date": "2021-04-27",                                                                                                                                                       
+							"Community": "1",
+							"7dayAvg": "2"
+						},
+						{
+							"Date": "2021-04-28",                                                                                                                                                       
+							"Community": "3",
+							"7dayAvg": "2"
+						},
+						{
+							"Date": "2021-04-29",                                                                                                                                                       
+							"Community": "16",
+							"7dayAvg": "4"
+						},
+						{
+							"Date": "2021-04-30",                                                                                                                                                       
+							"Community": "9",
+							"7dayAvg": "5"
+						},
+						{
+							"Date": "2021-05-01",                                                                                                                                                       
+							"Community": "7",
+							"7dayAvg": "5"
+						}
+					]
+				}
+			);
+		</script>
 		
 <!-- Resources -->
 <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
@@ -3859,7 +4098,10 @@ chart.cursor.lineY.strokeOpacity = 0;
 
     <body>
 	<div id="chartdiv" style="width: 100%; height: 500px; background-color: #FFFFFF;" ></div>
-    <br>	
+    <br>
+	    
+	<div id="chartdiv3" style="width: 100%; height: 500px; background-color: #FFFFFF;" ></div>
+    <br>
 	<h1 style="color: blue;font-size:20px;margin:50px;">World Total Confirmed Cases: 151,179,240</h1> 
         <div id="chartdiv1" style="width: 100%; height: 500px; background-color: #FFFFFF;" ></div>
     <br>
