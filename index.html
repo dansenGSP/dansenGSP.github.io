@@ -3991,12 +3991,12 @@
 						},
 						{
 							"Date": "2021-06-12",                                                                                                                                                       
-							"Community": "12",
+							"Community": "9",
 							"Dorm": "0",
 							"Imported": "9",
-							"Daily Cases": "21",
+							"Daily Cases": "18",
 							"Total Dorm": "54524",
-							"Total Cases": "62266"
+							"Total Cases": "62263"
 						},
 						{
 							"Date": "2021-06-13",                                                                                                                                                       
@@ -4005,7 +4005,7 @@
 							"Imported": "3",
 							"Daily Cases": "13",
 							"Total Dorm": "54524",
-							"Total Cases": "62279"
+							"Total Cases": "62276"
 						},
 						{
 							"Date": "2021-06-14",                                                                                                                                                       
@@ -4014,7 +4014,7 @@
 							"Imported": "6",
 							"Daily Cases": "25",
 							"Total Dorm": "54525",
-							"Total Cases": "62304"
+							"Total Cases": "62301"
 						},
 						{
 							"Date": "2021-06-15",                                                                                                                                                       
@@ -4023,7 +4023,7 @@
 							"Imported": "0",
 							"Daily Cases": "14",
 							"Total Dorm": "54525",
-							"Total Cases": "62318"
+							"Total Cases": "62315"
 						},
 						{
 							"Date": "2021-06-16",                                                                                                                                                       
@@ -4032,7 +4032,7 @@
 							"Imported": "5",
 							"Daily Cases": "24",
 							"Total Dorm": "54525",
-							"Total Cases": "62342"
+							"Total Cases": "62339"
 						},
 						{
 							"Date": "2021-06-17",                                                                                                                                                       
@@ -4041,7 +4041,7 @@
 							"Imported": "7",
 							"Daily Cases": "27",
 							"Total Dorm": "54525",
-							"Total Cases": "62369"
+							"Total Cases": "62366"
 						},
 						{
 							"Date": "2021-06-18",                                                                                                                                                       
@@ -4050,7 +4050,25 @@
 							"Imported": "2",
 							"Daily Cases": "16",
 							"Total Dorm": "54525",
-							"Total Cases": "62385"
+							"Total Cases": "62382"
+						},
+						{
+							"Date": "2021-06-19",                                                                                                                                                       
+							"Community": "14",
+							"Dorm": "0",
+							"Imported": "7",
+							"Daily Cases": "21",
+							"Total Dorm": "54525",
+							"Total Cases": "62403"
+						},
+						{
+							"Date": "2021-06-20",                                                                                                                                                       
+							"Community": "9",
+							"Dorm": "0",
+							"Imported": "2",
+							"Daily Cases": "11",
+							"Total Dorm": "54525",
+							"Total Cases": "62414"
 						}
 					]
 				}
@@ -4490,13 +4508,13 @@
 						},
 						{
 							"Date": "2021-06-12",                                                                                                                                                       
-							"Community": "12",
+							"Community": "9",
 							"7dayAvg": "5"
 						},
 						{
 							"Date": "2021-06-13",                                                                                                                                                       
 							"Community": "10",
-							"7dayAvg": "6"
+							"7dayAvg": "5"
 						},
 						{
 							"Date": "2021-06-14",                                                                                                                                                       
@@ -4516,11 +4534,21 @@
 						{
 							"Date": "2021-06-17",                                                                                                                                                       
 							"Community": "20",
-							"7dayAvg": "14"
+							"7dayAvg": "13"
 						},
 						{
 							"Date": "2021-06-18",                                                                                                                                                       
 							"Community": "14",
+							"7dayAvg": "15"
+						},
+						{
+							"Date": "2021-06-19",                                                                                                                                                       
+							"Community": "14",
+							"7dayAvg": "16"
+						},
+						{
+							"Date": "2021-06-20",                                                                                                                                                       
+							"Community": "9",
 							"7dayAvg": "15"
 						}
 					]
@@ -4547,34 +4575,34 @@ var chart = am4core.create("chartdiv1", am4charts.XYChart3D);
 // Add data
 chart.data = [{
   "country": "United States",
-  "cases": 34365985
+  "cases": 34401712
 }, {
   "country": "India",
-  "cases": 29700313
+  "cases": 29881965
 }, {
   "country": "Brazil",
-  "cases": 17629714
+  "cases": 17883750
 }, {
   "country": "France",
-  "cases": 5747647
+  "cases": 5755496
 }, {
   "country": "Turkey",
-  "cases": 5348249
+  "cases": 5365208
 }, {
   "country": "Russia",
-  "cases": 5249990
+  "cases": 5316826
 }, {
   "country": "United Kingdom",
-  "cases": 4589814
-}, {
-  "country": "Italy",
-  "cases": 4248432
+  "cases": 4620968
 }, {
   "country": "Argentina",
-  "cases": 4198620
+  "cases": 4258394
+}, {
+  "country": "Italy",
+  "cases": 4252095
 }, {
   "country": "Colombia",
-  "cases": 3829879
+  "cases": 3917348
 
 }];
 
@@ -4664,34 +4692,34 @@ chart.cursor.lineY.strokeOpacity = 0;
     // Add data
     chart.data = [{
       "country": "United States",
-      "death": 616150
+      "death": 617083
     }, {
       "country": "Brazil",
-      "death": 493837
+      "death": 500868
     }, {
       "country": "India",
-      "death": 381931
+      "death": 386740
     }, {
       "country": "Mexico",
-      "death": 230624
+      "death": 231151
     }, {
       "country": "Peru",
-      "death": 189522
-    }, {
-      "country": "United Kingdom",
-      "death": 127926
+      "death": 190202
     }, {
       "country": "Russia",
-      "death": 127576
+      "death": 129361
+    }, {
+      "country": "United Kingdom",
+      "death": 127970
     }, {
       "country": "Italy",
-      "death": 127153
+      "death": 127253
     }, {
       "country": "France",
-      "death": 110578
+      "death": 110724
     }, {
       "country": "Colombia",
-      "death": 97560
+      "death": 99335
     
     }];
     
@@ -4774,10 +4802,10 @@ chart.cursor.lineY.strokeOpacity = 0;
 	    
 	<div id="chartdiv3" style="width: 100%; height: 500px; background-color: #FFFFFF;" ></div>
     <br>
-	<h1 style="color: blue;font-size:20px;margin:50px;">World Total Confirmed Cases: 177,819,233</h1> 
+	<h1 style="color: blue;font-size:20px;margin:50px;">World Total Confirmed Cases: 178,990,343</h1> 
         <div id="chartdiv1" style="width: 100%; height: 500px; background-color: #FFFFFF;" ></div>
     <br>
-	<h1 style="color: red;font-size:20px;margin:50px;">World Total Deaths: 3,849,031</h1>
+	<h1 style="color: red;font-size:20px;margin:50px;">World Total Deaths: 3,876,269</h1>
         <div id="chartdiv2" style="width: 100%; height: 500px; background-color: #FFFFFF;" ></div>
     </body>
 </html>
